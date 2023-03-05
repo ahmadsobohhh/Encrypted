@@ -1,0 +1,161 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* change align-content to align-items */
+  height: 100vh; /* set height of body to viewport height */
+}
+.chatbox-container {
+    margin-left: 10px;
+    font-family: 'Roboto Mono', monospace;
+    border: 1px solid #333;
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: white;
+    justify-content: center;
+    height: 63.5vh;
+
+}
+
+.chatbox-header {
+    border-right: 2px solid #000;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;;
+    border: 0px solid #000;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.chatbox-users {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+  .chatbox-users p {
+    margin: 0 10px 0 0;
+  }
+
+  .chatbox-messages {
+    font-family: 'Roboto Mono', monospace;
+    overflow-y: auto; /* change from scroll to auto */
+    height: 300px;
+    max-height: 300px;
+    font-size: 16px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    /* overflow-y: scroll; remove this line */
+    padding: 10px;
+    float: left;
+  }
+  .chatbox-messages p.user-message {
+    text-align: left;
+    float: left;
+    display: block;
+  }
+  
+  .chatbox-messages p.other-user-message {
+    text-align: left;
+    float: left;
+    display: block;
+  }
+  
+  .chatbox-messages p {
+    font-family: 'Roboto Mono', monospace;
+    display: block;
+    color: white;
+    margin: 0;
+    text-align: left; /* add this */
+  }  
+
+  .chatbox-messages p.user1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    color: #BB86FC;
+  }
+  
+  .chatbox-messages p.user2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    color: #399ce9;
+  }
+
+  .chatbox-messages p.user3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    color: #42eda6;
+  }
+
+  .chatbox-messages p.user4 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f6ff77;
+  }
+
+  .chatbox-messages p.user5 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff6666;
+  }
+
+  .chatbox-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .chatbox-footer input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius: 5px;
+  }
+  
+  .chatbox-footer button {
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+    background-color: #BB86FC;;
+    color: BB;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.75s;
+  }
+  
+  .chatbox-footer button:hover {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #bbf5bb;
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 4px #333;
+    transition: background-color 0.75s;
+  }
+
+  .users-container{
+    border-left: 10px solid black;
+    color: white;
+    background-color: #333;
+    border: 3px solid #333;
+    font-family: 'Roboto Mono', monospace;
+    width: 15%;
+    text-align: left;
+    padding: 18px;
+    height: 63.5vh;
+  }
