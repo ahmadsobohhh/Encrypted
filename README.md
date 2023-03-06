@@ -1,2 +1,2 @@
 # hackthehill
-Inshallah Mashallah
+Inshallah
